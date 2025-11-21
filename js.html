@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Moderno</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="page-container">
+
+<header class="header">
+    <div class="logo">💻 Aprenda Tecnologia</div>
+    <a href="index.html" class="theme-btn">⬅ Voltar</a>
+</header>
+
+<section class="hero">
+    <h1>JavaScript Moderno</h1>
+    <p>Entenda os fundamentos essenciais do JavaScript atual (ES6+)</p>
+</section>
+
+<main class="content" style="max-width:900px; margin:auto; padding:20px;">
+
+    <h2>📌 O que é JavaScript?</h2>
+    <p>
+        JavaScript é a principal linguagem para desenvolvimento web. 
+        É usada para criar interatividade, animações, aplicações completas e até servidores.
+    </p>
+
+    <h2>🚀 Recursos Modernos</h2>
+    <ul>
+        <li>Arrow Functions</li>
+        <li>Destructuring</li>
+        <li>Async/Await</li>
+        <li>Classes</li>
+        <li>Módulos ES</li>
+    </ul>
+
+    <h2>📘 Exemplo Prático (ES6)</h2>
+
+<pre><code class="code-box">const user = { name: "Pablo", age: 20 };
+const { name } = user;
+
+console.log(`Olá, ${name}!`);
+</code></pre>
+
+    <h2>➡ Por que aprender JavaScript?</h2>
+    <p>
+        Ele é usado em:
+    </p>
+    <ul>
+        <li>Sites</li>
+        <li>Aplicações Web (SPA)</li>
+        <li>APIs (Node.js)</li>
+        <li>Apps Mobile (React Native)</li>
+        <li>Automação</li>
+        <li>Games</li>
+    </ul>
+
+
+        <section>
+                <h2>🧩 Variáveis e Tipos</h2>
+                <p>Declaração com <code>let</code>, <code>const</code> e exemplos de tipos primitivos.</p>
+<pre><code class="code-box">// números, strings, boolean
+let idade = 30;
+const nome = "Pablo";
+const ativo = true;
+
+// Template literal
+console.log(`Nome: ${nome}, Idade: ${idade}`);
+</code></pre>
+
+                <h2>🔧 Funções (tradicionais e arrow)</h2>
+                <p>Funções nomeadas, anônimas e arrow functions.</p>
+<pre><code class="code-box">// função tradicional
+function soma(a, b) {
+    return a + b;
+}
+
+// arrow function
+const dobro = x =&gt; x * 2;
+
+console.log(soma(2,3)); // 5
+console.log(dobro(4));  // 8
+</code></pre>
+
+                <h2>📚 Arrays e métodos úteis</h2>
+                <p>Map, filter, reduce e iteração.</p>
+<pre><code class="code-box">const nums = [1,2,3,4,5];
+
+const pares = nums.filter(n =&gt; n % 2 === 0);
+const dobrados = nums.map(n =&gt; n * 2);
+const somaTotal = nums.reduce((acc, n) =&gt; acc + n, 0);
+
+console.log(pares); // [2,4]
+console.log(dobrados); // [2,4,6,8,10]
+console.log(somaTotal); // 15
+</code></pre>
+
+                <h2>🧰 Objetos e acesso a propriedades</h2>
+                <p>Objeto simples, desestruturação e métodos.</p>
+<pre><code class="code-box">const usuario = {
+    nome: 'Pablo',
+    idade: 20,
+    saudacao() { return `Olá, ${this.nome}` }
+};
+
+const { nome: primeiroNome, idade } = usuario;
+console.log(usuario.saudacao()); // Olá, Pablo
+</code></pre>
+
+                <h2>⏳ Promises e <code>fetch</code></h2>
+                <p>Exemplo simples de usar <code>fetch</code> com Promises (API pública).</p>
+<pre><code class="code-box">// Exemplo de fetch (requisição GET)
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response =&gt; response.json())
+    .then(data =&gt; console.log('fetch ->', data))
+    .catch(err =&gt; console.error('Erro:', err));
+</code></pre>
+
+                <h2>async / await</h2>
+                <p>Forma moderna e mais legível de trabalhar com Promises.</p>
+<pre><code class="code-box">async function pegarTodo() {
+    try {
+        const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+        const todo = await res.json();
+        console.log('async/await ->', todo);
+    } catch (err) {
+        console.error('Erro async:', err);
+    }
+}
+
+pegarTodo();
+</code></pre>
+
+                <h2>🖱 Manipulação do DOM e Eventos</h2>
+                <p>Adicionar um botão dinamicamente e escutar clique.</p>
+<pre><code class="code-box">// cria botão e adiciona ao body
+const btn = document.createElement('button');
+btn.textContent = 'Clique aqui';
+btn.style.padding = '8px 12px';
+document.body.appendChild(btn);
+
+btn.addEventListener('click', () =&gt; {
+    alert('Você clicou!');
+});
+</code></pre>
+        </section>
+
+    
+
+    
+</main>
+
+    <footer class="site-footer">Pablo Alves - 2025</footer>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>

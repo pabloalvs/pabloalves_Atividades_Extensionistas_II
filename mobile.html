@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Responsivo</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page-container">
+
+<header class="header">
+    <div class="logo">💻 Aprenda Tecnologia</div>
+    <a href="index.html" class="theme-btn">⬅ Voltar</a>
+</header>
+
+<section class="hero">
+    <h1>Design Responsivo</h1>
+    <p>Crie interfaces que funcionam perfeitamente em qualquer dispositivo</p>
+</section>
+
+<main class="content" style="max-width:900px; margin:auto; padding:20px;">
+
+    <h2>📌 Por que responsividade importa?</h2>
+    <p>
+        Usuários acessam a web em celulares, tablets, notebooks e telas grandes.  
+        Um layout responsivo garante uma experiência consistente, adaptada e confortável
+        independente do tamanho de tela.
+    </p>
+
+    <h2>📱 Exemplo de Media Query</h2>
+
+<pre><code class="code-box">@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}</code></pre>
+
+    <h2>✨ Dicas essenciais</h2>
+    <ul>
+        <li>Use unidades relativas (%, rem, vw).</li>
+        <li>Utilize Flexbox e Grid para layouts fluidos.</li>
+        <li>Evite tamanhos fixos em elementos sensíveis.</li>
+        <li>Teste sempre em diferentes larguras de tela.</li>
+        <li>Combine breakpoints com design mobile-first.</li>
+    </ul>
+    
+</main>
+
+    <footer class="site-footer">Pablo Alves - 2025</footer>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid & Flexbox</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page-container">
+
+<header class="header">
+    <div class="logo">💻 Aprenda Tecnologia</div>
+    <a href="index.html" class="theme-btn">⬅ Voltar</a>
+</header>
+
+<section class="hero">
+    <h1>CSS Grid & Flexbox</h1>
+    <p>Aprenda como criar layouts modernos, flexíveis e responsivos</p>
+</section>
+
+<main class="content" style="max-width:900px; margin:auto; padding:20px;">
+
+    <h2>📌 Grid vs Flexbox</h2>
+    <p>
+        <strong>Grid</strong> é um sistema de layout <strong>bidimensional</strong> — controla linhas e colunas.<br>
+        <strong>Flexbox</strong> é um sistema <strong>unidimensional</strong> — controla apenas linhas <em>ou</em> colunas.<br><br>
+        Usados juntos, permitem criar layouts modernos com pouco código.
+    </p>
+
+    <h2>📐 Exemplo: CSS Grid</h2>
+
+<pre><code class="code-box">.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}</code></pre>
+
+    <h2>📦 Exemplo: Flexbox</h2>
+
+<pre><code class="code-box">.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+
+    <h2>🔍 Quando usar cada um?</h2>
+    <ul>
+        <li><strong>Grid</strong>: dashboards, galerias, layouts de página</li>
+        <li><strong>Flexbox</strong>: barras de navegação, cards, componentes alinhados</li>
+        <li>Ambos podem ser combinados em layouts complexos</li>
+    </ul>
+    
+</main>
+
+    <footer class="site-footer">Pablo Alves - 2025</footer>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>

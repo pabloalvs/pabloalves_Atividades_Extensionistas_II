@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>React Hooks</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page-container">
+
+<header class="header">
+    <div class="logo">💻 Aprenda Tecnologia</div>
+    <a href="index.html" class="theme-btn">⬅ Voltar</a>
+</header>
+
+<section class="hero">
+    <h1>React Hooks</h1>
+    <p>Como os Hooks transformaram a forma de criar componentes no React</p>
+</section>
+
+<main class="content" style="max-width:900px; margin:auto; padding:20px;">
+
+    <h2>📌 O que são Hooks?</h2>
+    <p>
+        Hooks são funções especiais introduzidas no React 16.8 que permitem usar 
+        estado, ciclo de vida e outras funcionalidades sem precisar de classes. 
+        Eles tornam o código mais simples, organizado e fácil de reutilizar.
+    </p>
+
+    <h2>⚡ Principais Hooks</h2>
+    <ul>
+        <li><strong>useState</strong> — controla variáveis reativas</li>
+        <li><strong>useEffect</strong> — executa efeitos colaterais</li>
+        <li><strong>useMemo</strong> — otimiza cálculos</li>
+        <li><strong>useContext</strong> — compartilha estado global</li>
+        <li><strong>useRef</strong> — cria referências persistentes</li>
+    </ul>
+
+    <h2>📘 Exemplo Prático (React real)</h2>
+
+<pre><code class="code-box">import { useState } from "react";
+
+export default function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;button onClick={() => setCount(count + 1)}&gt;
+      Clique: {count}
+    &lt;/button&gt;
+  );
+}
+</code></pre>
+
+    <h2>🌟 Por que os Hooks são importantes?</h2>
+    <p>
+        Eles permitem:
+    </p>
+
+    <ul>
+        <li>Menos código e mais legibilidade</li>
+        <li>Componentes mais fáceis de testar</li>
+        <li>Reutilização de lógica (custom hooks)</li>
+        <li>Melhor organização da aplicação</li>
+    </ul>
+    
+</main>
+
+    <footer class="site-footer">Pablo Alves - 2025</footer>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>
